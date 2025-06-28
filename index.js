@@ -12,6 +12,9 @@ const server = http.createServer((req, res) => {
     } else if (req.url === '/about'){
         // Go to correct file if file extension is left out
         filePath = 'about.html';
+    } else if (req.url === '/contact-me'){
+        // Go to correct file if file extension is left out
+        filePath = 'contact-me.html';
     } else {
         // Go to 404 page
         filePath = '404.html';
