@@ -13,8 +13,8 @@ const server = http.createServer((req, res) => {
         // Go to correct file if file extension is left out
         filePath = 'about.html';
     } else {
-        // Remove the fist '/' character
-        filePath = req.url.slice(1);
+        // Go to 404 page
+        filePath = '404.html';
     } 
 
     // Join the full file path
